@@ -32,19 +32,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                              KC_TILDE, KC_HOME, KC_PGDN, KC_DOUBLE_QUOTE, KC_TRNS,  						KC_LBRC, KC_LPRN, KC_RPRN, KC_RBRC, TO(2),
                              //------------------------------------------------------------------------------------------------
                              TO(0), OSM(MOD_LSFT),  						KC_TRNS, TO(3)),
-	[2] = LAYOUT_split_3x5_2(KC_ESCAPE, KC_W, KC_E, KC_R, KC_T,  						KC_NO, KC_HOME, KC_UP, KC_END, KC_BACKSPACE,
+	[2] = LAYOUT_split_3x5_2(KC_ESCAPE, KC_NO, KC_NO, KC_NO, KC_NO,  						KC_NO, KC_HOME, KC_PGUP, KC_END, KC_BACKSPACE,
                              //------------------------------------------------------------------------------------------------
-                             KC_TAB, KC_S, KC_D, KC_F, KC_G,						KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, KC_ENTER,
+                             KC_TAB, MOD_LCTL, MOD_LALT, MOD_LGUI, KC_NO, 					KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, KC_ENTER,
                              //------------------------------------------------------------------------------------------------
-                             KC_GRAVE, KC_C, KC_V, KC_B, KC_V,  						KC_NO, KC_NO, KC_NO, KC_DOT, KC_NO,
+                             KC_GRAVE, KC_NO, KC_NO, KC_NO, KC_NO,  						KC_NO, KC_NO, KC_PGDN, KC_DOT, KC_NO,
                              //------------------------------------------------------------------------------------------------
                              TO(0), KC_LCMD, KC_LALT, TO(1)),
 
-	[3] = LAYOUT_split_3x5_2(KC_ESCAPE, KC_MPLY, KC_MPRV, KC_MNXT, KC_UNDERSCORE,						KC_MINUS, KC_7, KC_8, KC_9, KC_QUOT,
+	[3] = LAYOUT_split_3x5_2(KC_ESCAPE, KC_MPLY, KC_MPRV, KC_MNXT, KC_UNDERSCORE,   						KC_MINUS, KC_7, KC_8, KC_9, KC_QUOT,
                              //------------------------------------------------------------------------------------------------
-                             KC_TAB, MT(MOD_LCTL, KC_NO), MT(MOD_LALT, KC_KB_VOLUME_DOWN), MT(MOD_LGUI, KC_KB_VOLUME_UP), KC_PLUS, 						KC_EQUAL, KC_4, KC_5, KC_6, KC_ENTER,
+                             KC_TAB, MT(MOD_LCTL, KC_NO), MT(MOD_LALT, KC_KB_VOLUME_DOWN), MT(MOD_LGUI, KC_KB_VOLUME_UP), KC_PLUS,   						KC_EQUAL, KC_4, KC_5, KC_6, KC_ENTER,
                              //------------------------------------------------------------------------------------------------
-                             QK_RBT, KC_ASTERISK, KC_PGDN, KC_END, KC_DOT, 						KC_0, KC_1, KC_2, KC_3, TO(2),
+                             QK_RBT, KC_ASTERISK, KC_PGDN, KC_END, KC_DOT,   						KC_0, KC_1, KC_2, KC_3, TO(2),
                              //------------------------------------------------------------------------------------------------
                              TO(0), KC_LCMD, KC_LALT, TO(1)),
 
