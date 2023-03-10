@@ -17,13 +17,13 @@ enum tap_dance_codes {
  */
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[0] = LAYOUT_split_3x5_2(KC_Q, LT(4,KC_W), LT(3,KC_F), LT(2,KC_P), LT(1,KC_B),						LT(1,KC_J), LT(2,KC_L), LT(3,KC_U), LT(4,KC_Y), TD(DANCE_4),
+	[0] = LAYOUT_split_3x5_2(LT(4,KC_Q), LT(3,KC_W), LT(2,KC_F), LT(1,KC_P), LT(0,KC_B),						LT(0,KC_J), LT(1,KC_L), LT(2,KC_U), LT(3,KC_Y), TD(DANCE_4),
                              //------------------------------------------------------------------------------------------------
                              KC_A, MT(MOD_LCTL, KC_R), MT(MOD_LALT, KC_S), MT(MOD_LGUI,KC_T), KC_G,						KC_M, MT(MOD_RGUI, KC_N), MT(MOD_RALT, KC_E), MT(MOD_RCTL,KC_I), KC_O,
                              //------------------------------------------------------------------------------------------------
                              KC_Z, KC_X, KC_C, KC_D, KC_V, 						KC_K, KC_H, TD(DANCE_2), TD(DANCE_1), TD(DANCE_3),
                              //------------------------------------------------------------------------------------------------
-                             KC_SPACE, OSM(MOD_LSFT), 						KC_LCTL, TO(1)),
+                             MT(MOD_MEH,KC_SPACE), OSM(MOD_LSFT), 						KC_LCTL, TO(1)),
 
 	[1] = LAYOUT_split_3x5_2(KC_ESCAPE, KC_AT, TD(DANCE_31), KC_DOLLAR, KC_PERCENT, 						KC_CIRCUMFLEX, KC_AMPERSAND, KC_ASTERISK, KC_SEMICOLON, KC_BACKSPACE,
                              //------------------------------------------------------------------------------------------------
