@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                              //------------------------------------------------------------------------------------------------
                              MT(MOD_MEH,KC_SPACE), OSM(MOD_LSFT), 						KC_LCTL, TO(1)),
 
-	[1] = LAYOUT_split_3x5_2(KC_ESCAPE, KC_AT, TD(DANCE_31), KC_DOLLAR, KC_PERCENT, 						KC_CIRCUMFLEX, KC_AMPERSAND, KC_ASTERISK, KC_SEMICOLON, KC_BACKSPACE,
+	[1] = LAYOUT_split_3x5_2(KC_ESCAPE, KC_AT, LSFT(KC_3), TD(DANCE_31), KC_PERCENT, 						KC_CIRCUMFLEX, KC_AMPERSAND, KC_ASTERISK, KC_SEMICOLON, KC_BACKSPACE,
                              //------------------------------------------------------------------------------------------------
                              KC_TAB, MT(MOD_LCTL, KC_EQUAL), MT(MOD_LALT, KC_GRAVE), MT(MOD_LGUI, KC_QUOTE), KC_ENTER,  						TD(BKSL_HME), LSFT(KC_LBRC), LSFT(KC_RBRC), TD(PIPE_END) , KC_ENTER,
                              //------------------------------------------------------------------------------------------------
