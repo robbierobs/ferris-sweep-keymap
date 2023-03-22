@@ -19,7 +19,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "config_common.h"
+/* #include "config_common.h" */
+/* #undef TAPPING_TERM */
+/* #define TAPPING_TERM 240 */
+/* #define RETRO_TAPPING */
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_FORCE_HOLD
+#undef TAPPING_TERM
+#define TAPPING_TERM 230
+#define RETRO_TAPPING
 
 /* key matrix size */
 #define MATRIX_ROWS 8
