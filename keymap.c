@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                              //------------------------------------------------------------------------------------------------
                              TO(0), KC_LCMD, KC_LALT, TO(1)),
 
-	[4] = LAYOUT_split_3x5_2(KC_ESCAPE, KC_1, KC_2, KC_3, KC_4, 						KC_MINUS, KC_7, KC_8, KC_9, KC_BACKSPACE,
+	[4] = LAYOUT_split_3x5_2(KC_ESCAPE, KC_1, KC_2, KC_3, KC_4, 						KC_MINUS, KC_7, KC_8, KC_9, TO(5),
                              //------------------------------------------------------------------------------------------------
                              KC_TAB, KC_LEFT, KC_DOWN, KC_RGHT, KC_ENTER, 						KC_EQUAL, KC_4, KC_5, KC_6, KC_ENTER,
                              //------------------------------------------------------------------------------------------------
@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                              //------------------------------------------------------------------------------------------------
                              KC_LCTL, KC_X, KC_C, KC_V, KC_B, 						KC_N, KC_M, KC_COMM, KC_DOT, KC_SLASH,
                              //------------------------------------------------------------------------------------------------
-                             LT(5,KC_SPACE), KC_LSFT, TO(0), TO(3)),
+                             LT(4,KC_SPACE), KC_LSFT, TO(0), TO(3)),
 };
 
 extern bool g_suspend_state;
